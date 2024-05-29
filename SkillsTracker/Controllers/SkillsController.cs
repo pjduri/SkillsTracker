@@ -32,6 +32,7 @@ public class SkillsController : Controller
             + "<label>Date:<br>"
             + "<input name='date' type='date' />"
             + "</label><br/>"
+            
             + "<label>JavaScript<br/>"
             + "<select name='javascript'>"
             + "<option value='Learning Basics'>Beginner</option>"
@@ -39,6 +40,7 @@ public class SkillsController : Controller
             + "<option value='JavaScript Genius!!'>Master</option>"
             + "</select>"
             + "</label><br/>"
+
             + "<label>C#<br/>"
             + "<select name='csharp'>"
             + "<option value='Learning Basics'>Beginner</option>"
@@ -46,6 +48,7 @@ public class SkillsController : Controller
             + "<option value='C How Sharp I Am?'>Master</option>"
             + "</select>"
             + "</label><br/>"
+
             + "<label>Java<br/>"
             + "<select name='java'>"
             + "<option value='Learning Basics'>Beginner</option>"
@@ -53,6 +56,7 @@ public class SkillsController : Controller
             + "<option value='I eat Beans for breakfast!'>Master</option>"
             + "</select>"
             + "</label><br/>"
+
             + "<input type='submit' />"
             + "</form>";
         return Content(html, "text/html");
