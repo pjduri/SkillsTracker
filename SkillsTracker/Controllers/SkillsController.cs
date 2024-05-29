@@ -5,6 +5,7 @@ namespace SkillsTracker;
 [Route("/skills/")]
 public class SkillsController : Controller
 {
+    // GET: localhost:xxxx/skills
     [HttpGet]
     public IActionResult DisplayLanguageOptions()
     {
@@ -22,6 +23,7 @@ public class SkillsController : Controller
         return Content(html, "text/html");
     }
 
+    // GET: localhost:xxxx/skills/form
     [HttpGet("form")]
     public IActionResult DisplayForm()
     {
@@ -56,6 +58,7 @@ public class SkillsController : Controller
         return Content(html, "text/html");
     }
 
+    // POST: localhost:xxxx/skills/form
     [HttpPost("form")]
     public IActionResult DisplayProgress(
         string date,
